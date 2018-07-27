@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const file = tab.url;
         swarm.upload(file).then(hash => {
           console.log("Uploaded file. Address:", hash);
+          alert('The Swarm Hash is:' + hash);
         })
       });
     }, false);
